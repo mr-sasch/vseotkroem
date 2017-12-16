@@ -1,0 +1,57 @@
+.menu-services
+	margin auto
+	display block
+
+/* Табы */
+.menu-services__tabs
+	display flex
+	justify-content space-between
+
+.menu-services__tab
+	padding 27px 10px
+	display flex
+	cursor pointer
+	justify-content center
+	background-color $colorTab
+	border-radius 10px 10px 0 0
+	align-items center
+	width calc(25% - 3px)
+	max-height 70px
+	font 600 20px Roboto
+
+a.menu-services__tab
+	text-decoration none
+	color $colorBlack
+	transition .2s ease
+
+.menu-services__tab:hover,
+.menu-services__tab.active
+	background-color $colorGreen
+/* /Табы */
+
+/* Содержимое табов */
+.menu-services__tabs-content
+	height 70px
+	background-color #202020
+	border-radius 0 0 20px 20px
+.menu-services__tabs-content.show
+	display flex
+	justify-content space-around
+	align-items center
+.menu-services__tabs-content.hide
+	display none
+
+.menu-services__tab-content
+	padding 25px 0
+	font-size 20px
+	font-weight 600
+	text-decoration none
+	cursor pointer
+	color #e4e4e4
+	text-transform uppercase
+	transition .2s ease
+
+.menu-services__tab-content:hover,
+.menu-services__tab-content.active
+	color $colorGreen
+/* /Содержимое табов */

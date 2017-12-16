@@ -1,0 +1,104 @@
+/* Главное меню */
+.menu-main
+	position relative
+	display block
+	text-align center
+
+.menu-main__items
+	display inline-block
+	width 100%
+	max-width 750px
+	text-align justify
+	justifyAlign()
+
+.menu-main__item
+	display inline-block
+	cursor pointer
+	border 2px solid transparent
+	border-radius 10px
+	transition .2s ease
+
+.menu-main__item:hover,
+.menu-main__item.active
+	border-color $colorGreen
+
+.menu-main__item-a
+	padding 8px 10px
+	display inline-block
+	font-size 18px
+	font-weight 600
+	text-decoration none
+	color #fff
+	text-transform uppercase
+
+/* Главное меню - мобильное */
+@media screen and (max-width 750px)
+	.menu-main__items
+		position absolute
+		top 0
+		left -1000px
+		margin-top 50px
+		overflow hidden
+		background-color #3a1d07
+		border 2px solid $colorGreen
+		border-radius 10px
+		opacity 0
+		transition .3s ease
+
+	.menu-main__items.show
+		left 0
+		opacity 1
+
+	.menu-main__items:after
+		display none
+
+	.menu-main__item
+		width 100%
+
+	.menu-main__item.active
+		background-color $colorGreen
+		border-radius 0
+
+	/* Кнопка */
+	.mobile-btn
+		position relative
+		float right
+		overflow hidden
+		width 40px
+		height 40px
+		cursor pointer
+		border 2px solid
+		border-radius 5px
+
+	.mobile-btn__stroke
+		position absolute
+		width calc(100% - 4px)
+		height 1px
+		border 1px solid
+		transition transform .2s ease
+
+	.mobile-btn__stroke-center
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+
+	.mobile-btn__stroke-top
+		top 7px
+		left 50%
+		transform translateX(-50%)
+
+	.mobile-btn__stroke-btm
+		left 50%
+		bottom 7px
+		transform translateX(-50%)
+
+	.active .mobile-btn__stroke-top
+		top 50%
+		transform translate(-50%, -50%) rotate(-45deg)
+	.active .mobile-btn__stroke-center
+		transform translate(-50%, -50%) rotate(-135deg)
+	.active .mobile-btn__stroke-btm
+		transform translateX(100%)
+/* /Главное меню - мобильное */
+
+/* /Главное меню */

@@ -1,0 +1,24 @@
+mixin menu-main()
+	// Главное меню
+	+b.menu-main&attributes(attributes)
+		block
+		// Кнопка мобильного меню
+		.mobile-btn
+			.mobile-btn__stroke.mobile-btn__stroke-top
+			.mobile-btn__stroke.mobile-btn__stroke-center
+			.mobile-btn__stroke.mobile-btn__stroke-btm		
+		// /Кнопка мобильного меню
+		
+		ul.menu-main__items
+			li.menu-main__item.active
+				a.menu-main__item-a(href='#') Главная
+			li.menu-main__item 
+				a.menu-main__item-a(href='#') Услуги
+			li.menu-main__item 
+				a.menu-main__item-a(href='#') Цены
+			li.menu-main__item 
+				a.menu-main__item-a(href='#') Полезная информация
+			li.menu-main__item 
+				a.menu-main__item-a(href='#') Контакты
+	// /Главное меню
+	
