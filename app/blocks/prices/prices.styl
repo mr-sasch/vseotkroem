@@ -1,0 +1,81 @@
+.content-prices
+	padding-bottom 30px
+	.footer__text-title-txt
+		margin 40px 0
+	.footer__text-title-container
+		margin-bottom 0
+	.footer__text-title-txt:before
+		margin-right 120px
+	.footer__text-title-txt:after
+		margin-left 120px
+
+.content-prices-wrapper
+	margin auto
+
+.content-prices__text
+	margin-bottom 30px
+	font-size 16px
+	line-height 18px
+
+.prices__title
+	padding 15px 20px
+	display flex
+	justify-content space-between
+	font-size 20px
+	font-weight 600
+	color #fff
+	background-color rgba(#000000, .6)
+	border-radius 10px 10px 0 0
+
+.prices__title-ttl,
+.prices__title-btn
+	flex 1 1 0
+
+.prices__item
+	margin-bottom 5px
+	padding 5px 20px
+	display flex
+	font-size 18px
+	justify-content space-between
+	background-color rgba(#ffffff, .5)
+	transition .3s ease
+
+.prices__item-title,
+.prices__item-btn-wrapper
+	flex 1 1 0
+
+.prices__item-title,
+.prices__item-price
+	display flex
+	align-items center
+	font-size 18px
+
+.prices__item-btn
+	padding 9px 0
+	float right
+	width 190px
+	font-size 18px
+	font-weight 600
+	color #fff
+	background-color #000
+	border 2px solid #303030
+	border-radius 10px
+	opacity 0
+	transition .3s ease
+
+.prices-active
+	.prices__item-btn
+		opacity 1
+
+.prices-active.prices__item
+	font-size 20px
+	font-weight 600
+	background-color rgba(199, 199, 199, .4)
+
+.prices__item:hover
+	padding 9px 20px
+	font-size 20px
+	font-weight 600
+	background-color rgba(199, 199, 199, .4)
+	.prices__item-btn
+		opacity 1

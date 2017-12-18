@@ -1,7 +1,13 @@
 /* Подсветка активного пункта меню */
-$('.menu-main__item').click(function() {
-	$('.menu-main__items').find('.active').removeClass('active');
-	$(this).addClass('active');
+document.addEventListener("DOMContentLoaded", function(event) {
+	var curUrl = window.location.pathname;
+	var menuItems = document.getElementsByClassName('menu-main__item');
+	for (i=0;i<10;i++) {
+		var pagesUrl = document.getElementsByClassName('menu-main__item-a')[i].getAttribute('href');
+		if (curUrl == pagesUrl) {
+		 menuItems[i].classList.add('active');
+	 };
+	};
 });
 /*/ Подсветка активного пункта меню */
 

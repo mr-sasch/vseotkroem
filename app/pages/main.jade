@@ -1,4 +1,6 @@
 extends /blocks/layout-default/layout-default
+include /blocks/main__why-us/main__why-us
+include /blocks/main__prices/main__prices
 
 block head
 	- var pageTitle = 'Vseotkroem Main Page';
@@ -6,3 +8,6 @@ block head
 block content
 	include ../blocks/header-main/header-main
 	.content
+		+main__why-us()
+		+main__prices()
+	include ../blocks/footer-main/footer-main

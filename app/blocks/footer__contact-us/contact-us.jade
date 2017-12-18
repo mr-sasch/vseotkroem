@@ -1,0 +1,9 @@
+mixin contact-us()
+	+b.contact-us&attributes(attributes)
+		block
+		.contact-us__container.site-width
+			form#contact-us__form.contact-us__form
+				input(type='text' name='name' placeholder='ИМЯ').contact-us__form-input
+				input(type='text' name='mail' placeholder='EMAIL').contact-us__form-input
+				textarea(name='message' placeholder='Введите текст').contact-us__form-textarea
+				button(type='submit' form='contact-us__form' value='Отправить').contact-us__form-button Отправить

@@ -1,0 +1,31 @@
+extends /blocks/layout-default/layout-default
+include /blocks/block-title/block-title
+
+block head
+	- var pageTitle = 'Prices';
+
+block content
+	include ../blocks/header/header
+	.content-prices.bg-dotted
+		+block-title('цены')
+		.content-prices-wrapper.site-width
+			.content-prices__text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+			.prices
+				.prices__title
+					.prices__title-ttl Услуга
+					.prices__title-price Цена
+					.prices__title-btn
+				mixin price(title, classItem)
+					.prices__item(class= classItem)
+						.prices__item-title= title
+						.prices__item-price 20 руб.
+						.prices__item-btn-wrapper
+							button.prices__item-btn Вызвать мастера
+				+price('Вскрытие дверей')
+				+price('Офисы и склады', '')
+				+price('Коттеджи и гаражи')
+				+price('Вскрытие дверей')
+				+price('Офисы и склады')
+				+price('Коттеджи и гаражи')
+				
+	include ../blocks/footer/footer

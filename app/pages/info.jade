@@ -1,0 +1,26 @@
+extends /blocks/layout-default/layout-default
+include /blocks/block-title/block-title
+
+block head
+	- var pageTitle = 'Useful articles';
+
+block content
+	include ../blocks/header/header
+	.content-info.bg-dotted
+		+block-title('Полезная информация')
+		.content-info__text.site-width
+			p
+				img(src='images/info__img.png').content-info__text-img
+				| Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+			p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет неп
+		.content-info__art-blocks.site-width
+			mixin art-block
+				.content-info__art-block
+					.content-info__art-block-title Заголовок инфы
+					img(src='images/info__img-small.png').content-info__art-block-img
+					.content-info__art-block-txt Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более
+					a(href='#').content-info__art-block-readmore Читать полностью
+			+art-block
+			+art-block
+			+art-block
+	include ../blocks/footer/footer

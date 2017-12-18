@@ -1,0 +1,19 @@
+mixin main__prices()
+	+b.main__prices&attributes(attributes)
+		block
+		+block-title('Цены')
+		.prices-card-container.site-width
+			mixin prices-card
+				.prices-card
+					.prices-card__title Вскрытие отечественного замка
+					img(src='images/main__prices.png').prices-card__img
+					.prices-card__price от 20 рублей
+					.prices-card__more
+						.prices-card__more-wrap
+							a(href='#').prices-card__more-btn Подробнее
+			+prices-card
+			+prices-card
+			+prices-card
+			+prices-card
+				
+			

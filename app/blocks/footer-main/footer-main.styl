@@ -1,2 +1,69 @@
-.footer-main
+.footer__text
+	padding 40px 0
 	display block
+	width 100%
+
+.footer__text-title-txt
+	position relative
+	z-index 20
+	display inline-block
+	font-size 24px
+	font-weight 600
+	color #252525
+	text-transform uppercase
+	// background-color #fff
+
+.footer__text-title-txt:after
+	position absolute
+	top 50%
+	left 0
+	margin-left 300px
+	width 700px
+	height 1px
+	content ''
+	background-color #dadada
+	border 1px solid #dadada
+	transform translateY(-50%)
+
+.footer__text-title-txt:before
+	position absolute
+	top 50%
+	right 0
+	margin-right 300px
+	width 700px
+	height 1px
+	content ''
+	background-color #dadada
+	border 1px solid #dadada
+	transform translateY(-50%)
+
+.footer__text-title-container
+	position relative
+	margin-bottom 30px
+	overflow hidden
+	text-align center
+
+.footer__text-content
+	position relative
+	margin auto
+	display block
+	min-height 230px
+	font-size 18px
+	line-height 22px
+	p
+		margin-bottom 20px
+
+.footer__text-image
+	position relative
+	z-index 20
+	right 0
+	display inline-block
+	float right
+	height 270px
+	shape-outside polygon(55% 0, 55% 100%, 0 100%, 0 87%, 50% 27%, 47% 13%)
+
+.footer__text .footer__text-title-txt:before
+	margin-right 300px
+
+.footer__text .footer__text-title-txt:after
+	margin-left 300px

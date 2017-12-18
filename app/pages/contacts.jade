@@ -1,9 +1,25 @@
-//- extends /blocks/layout-default/layout-default
-//- 
-//- block head
-//- 	- var pageTitle = 'Vseotkroem Contacts Page';
-//- 
-//- block content
-//- 	+header
-//- 	.content
-//- 	//- +footer-main
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Vseotkroem Contacts Page';
+
+block content
+	include ../blocks/header/header
+	.contacts-content
+		.contacts-content-wrap.site-width
+			.contacts__map
+				iframe(src="https://yandex.by/map-widget/v1/-/CVgUrTpX" width="518" height="317" frameborder="0")
+			.contacts__text
+				.contacts__text-title Контакты
+				.contacts__text-address-block
+					.contacts__text-address-item
+						mixin address(label, value)
+							.contacts__text-address-block-address
+								.contacts__text-address-block-address-title= label
+								.contacts__text-address-block-address-text= value
+						+address('Email:', 'zamokvskroem@mail.ru')
+						+address('Телефон:', '8 (029) 123 45 67')
+						+address('Адрес:', 'Минск, ул. Красная д.11')
+						+address('Режим работы:', 'с 8.00 до 20.00')
+						.contacts__text-address-block-text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке
+	include ../blocks/footer/footer

@@ -1,0 +1,21 @@
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Vseotkroem Contacts Page';
+
+block content
+	include ../blocks/header/header
+	// (наследовано у страницы "контакты")
+	.content-uslugi.contacts-content
+		.contacts-content-wrap.site-width
+			.contacts__map
+				.content-uslugi__left
+					img(src='images/uslugi__img.png').content-uslugi__img
+					.content-uslugi__phone 8 (029) 123 45 67
+					button.content-uslugi__btn Вызвать мастера	
+			.contacts__text
+				.contacts__text-title Офисы и склады
+				.contacts__text-content Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный 
+		
+	include ../blocks/footer/footer
+	
