@@ -9,7 +9,7 @@
 	justify-content space-between
 
 .menu-services__tab
-	padding 27px 10px
+	padding 11px 10px
 	display flex
 	cursor pointer
 	justify-content center
@@ -17,7 +17,6 @@
 	border-radius 10px 10px 0 0
 	align-items center
 	width calc(25% - 3px)
-	max-height 70px
 	font 600 20px Roboto
 
 a.menu-services__tab
@@ -57,3 +56,78 @@ a.menu-services__tab
 .menu-services__tab-content.active
 	color $colorGreen
 /* /Содержимое табов */
+
+
+/* Мобильная версия */
+.menu-services-mobile__item .card
+	margin 5px 0
+	overflow hidden
+	border 1px solid rgba(184, 39, 182, 0)
+	border-radius 10px
+
+a.menu-services__tab:hover
+	text-decoration none
+	color $colorBlack
+
+a.menu-services__tab-content:hover
+	text-decoration none
+
+a.services-mobile__title
+	padding 11px 0
+	display block
+	font 600 20px Roboto
+	color $colorBlack
+	background-color #cdcdcd
+	transition .2s ease
+
+a.services-mobile__title:hover
+	text-decoration none
+	color $colorBlack
+	background-color $colorGreen
+
+.services-mobile__title-wrap.card-header
+	border none
+
+.menu-services-mobile__item
+	.card-body
+		padding 10px
+		background-color #202020
+	.card-header
+		padding 0
+	h5
+		cursor pointer
+	.card
+		background-color transparent
+
+a.card-body__item
+	padding 10px 0
+	display block
+	font-size 20px
+	font-weight 600
+	color #fff
+	text-transform uppercase
+	border-bottom 1px solid #cdcdcd
+	transition .2s ease
+
+a.card-body__item:last-child
+	border-bottom none
+
+a.card-body__item:hover
+	text-decoration none
+	color $colorGreen
+/* /Мобильная версия */
+
+/* Адаптиация */
+.menu-services-mobile
+	display none
+
+@media screen and (max-width 650px)
+	.menu-services-mobile
+		display block
+
+	.menu-services__tabs,
+	.menu-services__tabs-content,
+	.menu-services__tabs-content.show	
+		display none
+
+/* /Адаптиация */

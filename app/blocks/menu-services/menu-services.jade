@@ -26,3 +26,45 @@ mixin menu-services()
 			a.menu-services__tab-content(href='#') Изготовление ключей
 			a.menu-services__tab-content(href='#') Замена сейфовых замков
 		// /Содержимое табов
+		// Мобильная версия
+		.menu-services-mobile
+			.menu-services-mobile__item
+				#accordion(role="tablist")
+					.card
+						#headingOne.card-header.services-mobile__title-wrap(role="tab")
+							h5.mb-0
+								a.services-mobile__title(data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Вскрытие дверей
+						#collapseOne.services-mobile__content.collapse.show(role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion")
+							.card-body
+								a(href='#').card-body__item Квартир
+								a(href='#').card-body__item Офисов и складов
+								a(href='#').card-body__item Коттеджей и гаражей
+									
+					.card
+						#headingTwo.card-header.services-mobile__title-wrap(role="tab")
+							h5.mb-0
+								a.services-mobile__title.collapsed(data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") Вскрытие автомобилей
+						#collapseTwo.services-mobile__content.collapse(role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion")
+							.card-body
+								a(href='#').card-body__item Квартир
+								a(href='#').card-body__item Офисов и складов
+								a(href='#').card-body__item Коттеджей и гаражей
+					.card
+						#headingThree.card-header.services-mobile__title-wrap(role="tab")
+							h5.mb-0
+								a.services-mobile__title.collapsed(data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree") Вскрытие сейфов
+						#collapseThree.services-mobile__content.collapse(role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion")
+							.card-body
+								a(href='#').card-body__item Квартир
+								a(href='#').card-body__item Офисов и складов
+								a(href='#').card-body__item Коттеджей и гаражей
+					.card
+						#headingFour.card-header.services-mobile__title-wrap(role="tab")
+							h5.mb-0
+								a.services-mobile__title.collapsed(data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne") Замена и ремонт замков
+						#collapseFour.services-mobile__content.collapse(role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion")
+							.card-body
+								a(href='#').card-body__item Квартир
+								a(href='#').card-body__item Офисов и складов
+								a(href='#').card-body__item Коттеджей и гаражей			
+		// /Мобильная версия
