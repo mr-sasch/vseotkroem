@@ -59,11 +59,18 @@ a.menu-services__tab
 
 
 /* Мобильная версия */
-.menu-services-mobile__item .card
-	margin 5px 0
-	overflow hidden
-	border 1px solid rgba(184, 39, 182, 0)
-	border-radius 10px
+.menu-services-mobile__item
+	.card
+		margin 5px 0
+		overflow hidden
+		background-color transparent
+		border 1px solid rgba(184, 39, 182, 0)
+		border-radius 10px
+	.card-body
+		padding 10px
+		background-color #202020
+	h5
+		cursor pointer
 
 a.menu-services__tab:hover
 	text-decoration none
@@ -86,18 +93,8 @@ a.services-mobile__title:hover
 	background-color $colorGreen
 
 .services-mobile__title-wrap.card-header
+	padding 0
 	border none
-
-.menu-services-mobile__item
-	.card-body
-		padding 10px
-		background-color #202020
-	.card-header
-		padding 0
-	h5
-		cursor pointer
-	.card
-		background-color transparent
 
 a.card-body__item
 	padding 10px 0
@@ -127,7 +124,7 @@ a.card-body__item:hover
 
 	.menu-services__tabs,
 	.menu-services__tabs-content,
-	.menu-services__tabs-content.show	
+	.menu-services__tabs-content.show
 		display none
 
 /* /Адаптиация */

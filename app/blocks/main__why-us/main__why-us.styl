@@ -5,10 +5,13 @@
 
 .advtgs
 	margin auto
+	padding 0 10px
 
 .advtgs__item
 	position relative
 	margin 52px 0
+	display flex
+	align-items center
 
 .advtgs__item-title
 	margin-bottom 10px
@@ -29,10 +32,38 @@
 	float left
 
 .advtgs1
-	left -80px
+	padding-left 0
 .advtgs2
-	left 50px
+	padding-left 0
 .advtgs3
-	left -80px
+	padding-left 0
 .advtgs4
-	left 50px
+	padding-left 0
+
+.advtgs__item-number
+	display flex
+	width 63px
+	height 63px
+	font-size 30px
+	font-weight 600
+	color #2d2d2d
+	justify-content center
+	background-color #ECECEC
+	border 2px solid #000
+	border-radius 50%
+	align-items center
+
+.advtgs__item-content
+	margin-left 50px
+
+/* Адаптация */
+@media screen and (max-width 400px)
+	.advtgs__item-content
+		margin-left 0
+		text-align center
+	.advtgs__item
+		flex-direction column
+	.advtgs__item-number-container
+		margin-bottom 10px
+
+/* /Адаптация */

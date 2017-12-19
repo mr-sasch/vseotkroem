@@ -7,7 +7,7 @@
 .menu-main__items
 	display inline-block
 	width 100%
-	max-width 750px
+	max-width 800px
 	text-align justify
 	justifyAlign()
 
@@ -24,7 +24,7 @@
 
 .menu-main__item-a
 	padding 8px 10px
-	display inline-block
+	display block
 	font-size 18px
 	font-weight 600
 	text-decoration none
@@ -34,11 +34,23 @@
 
 .menu-main__item:hover .menu-main__item-a,
 .menu-main__item.active .menu-main__item-a
-	color $colorGreen
 	text-decoration none
+	color $colorGreen
+
+/* Меню в футере */
+.footer
+	.menu-main__items
+		margin-bottom 0
+	.menu-main
+		padding 0 10px
+
+.footer__separator
+	margin-top 0
+
+/* /Меню в футере */
 
 /* Главное меню - мобильное */
-@media screen and (max-width 750px)
+@media screen and (max-width 780px)
 	.menu-main__items
 		position absolute
 		top 0
@@ -52,9 +64,9 @@
 		transition .3s ease
 
 	.menu-main__items.show
+		z-index 10
 		left 0
 		opacity 1
-		z-index 10
 
 	.menu-main__items:after
 		display none
@@ -65,6 +77,20 @@
 	.menu-main__item.active
 		background-color $colorGreen
 		border-radius 0
+
+	.menu-main__item.active .menu-main__item-a
+		color #fff
+
+	.footer
+		.menu-main__items
+			position relative
+			left 0
+			margin-top 0
+			margin-bottom 0
+			background-color transparent
+			border none
+			border-radius 0
+			opacity 1
 
 	/* Кнопка */
 	.mobile-btn
@@ -106,6 +132,17 @@
 		transform translate(-50%, -50%) rotate(-135deg)
 	.active .mobile-btn__stroke-btm
 		transform translateX(100%)
+
+	.footer
+		.mobile-btn
+			display none
+		.menu-main
+			padding 0
+		.menu-main__items
+			margin-bottom 0
+
+	.footer__separator
+		margin-top 10px
 /* /Главное меню - мобильное */
 
 /* /Главное меню */

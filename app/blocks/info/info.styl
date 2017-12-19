@@ -6,9 +6,9 @@
 	.footer__text-title-container
 		margin-bottom 0
 	.footer__text-title-txt:before
-		margin-right 350px
+		margin-right 390px
 	.footer__text-title-txt:after
-		margin-left 350px
+		margin-left 390px
 
 
 .bg-dotted
@@ -25,6 +25,7 @@
 .content-info__text-img
 	margin-left 20px
 	float right
+	max-width 50%
 
 .content-info__art-blocks
 	display flex
@@ -59,3 +60,12 @@
 .content-info__art-block-readmore
 	display block
 	color $colorGreen
+
+/* Адаптация */
+@media screen and (max-width 950px)
+	.content-info__art-blocks
+		justify-content space-around
+	.content-info__art-block
+		margin 20px 0
+
+/* /Адаптация */

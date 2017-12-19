@@ -11,6 +11,7 @@
 
 .content-prices-wrapper
 	margin auto
+	padding 0 10px
 
 .content-prices__text
 	margin-bottom 30px
@@ -62,6 +63,8 @@
 	border-radius 10px
 	opacity 0
 	transition .3s ease
+.prices__item-btn:focus
+	outline none
 
 .prices-active
 	.prices__item-btn
@@ -78,3 +81,28 @@
 	background-color rgba(199, 199, 199, .4)
 	.prices__item-btn
 		opacity 1
+
+/* Адаптация */
+@media screen and (max-width 1024px)
+	.prices__item-btn
+		background-color $colorGreen
+		border-color $colorGreen
+		opacity 1
+
+@media screen and (max-width 550px)
+	.prices__item
+		flex-direction column
+		align-items center
+	.prices__item-title
+		flex 1 1 20px
+		margin-top 5px
+	.prices__item-btn-wrapper
+		margin 10px 0
+	.prices__title
+		display none
+	.prices
+		overflow hidden
+		border 2px solid grey
+		border-radius 10px
+
+/* /Адаптация */

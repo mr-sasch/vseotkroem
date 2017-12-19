@@ -5,7 +5,7 @@
 	.contacts__text-title
 		font-size 24px
 	.contacts__text-title:before
-		margin-left 270px
+		margin-left 290px
 	.contacts__text-content
 		font-size 18px
 		line-height 24px
@@ -32,3 +32,15 @@
 	background-color #303030
 	border 2px solid #303030
 	border-radius 10px
+
+/* Адаптация */
+@media screen and (max-width 590px)
+	.contacts-content-wrap
+		flex-direction column
+	.contacts__map
+		order 2
+		margin-top 30px
+	.content-uslugi .contacts__text
+		padding-left 0
+
+/* /Адаптация */

@@ -40,10 +40,10 @@
 
 .prices-card__more
 	position relative
+	margin-top 15px
 
 .prices-card__more-wrap
 	margin auto
-	margin-top 27px
 	width 150px
 	background-color #fff
 
@@ -55,4 +55,15 @@
 	border 2px solid #17eeb4
 	border-radius 10px
 
+.prices-card__more-btn:hover
+	text-decoration none
+	color inherit
 /* /Карточка с ценой */
+
+/* Адаптация */
+@media screen and (max-width 960px)
+	.prices-card-container
+		justify-content space-around
+	.prices-card
+		margin 25px 0
+/* /Адаптация */
