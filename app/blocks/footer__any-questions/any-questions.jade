@@ -2,4 +2,14 @@ mixin any-questions()
 	+b.any-questions&attributes(attributes)
 		block
 		.any-questions_txt Остались вопросы? Напишите нам и мы вам перезвоним!
-		button.any-questions__call Заказать звонок
+		button.any-questions__call(type="button" data-toggle="modal" data-target="#modalCallback") Заказать звонок
+		// Модалка
+		.modal.fade#modalCallback(tabindex="-1" role="dialog" aria-labelledby="modalCallbacklLabel" aria-hidden="true")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						h5.modal-title#modalCallbackLabel Заказать звонок
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+					.modal-body
+		// /Модалка

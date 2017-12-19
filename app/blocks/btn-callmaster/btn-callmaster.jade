@@ -1,4 +1,14 @@
 mixin btn-callmaster()
 	+b.btn-callmaster&attributes(attributes)
 		block
-		button.btn-callmaster-button Вызвать мастера
+		button.btn-callmaster-button(type="button" data-toggle="modal" data-target="#modalCallmaster") Вызвать мастера		
+		// Модалка
+		.modal.fade#modalCallmaster(tabindex="-1" role="dialog" aria-labelledby="modalCallmasterLabel" aria-hidden="true")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						h5.modal-title#modalCallmasterLabel Вызвать мастера
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+					.modal-body
+		// /Модалка

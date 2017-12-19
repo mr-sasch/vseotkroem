@@ -1,15 +1,16 @@
 .content-info
 	padding 0 10px 60px
+	overflow hidden
 	background #000
 	.footer__text-title-txt
 		margin 40px 0
 	.footer__text-title-container
 		margin-bottom 0
+		overflow visible
 	.footer__text-title-txt:before
-		margin-right 390px
+		margin-right 355px
 	.footer__text-title-txt:after
-		margin-left 390px
-
+		margin-left 355px
 
 .bg-dotted
 	background url('../../images/main__why-us-bg-sm.png')
@@ -59,6 +60,9 @@
 
 .content-info__art-block-readmore
 	display block
+	color $colorGreen
+	transition .2s ease
+.content-info__art-block-readmore:hover
 	color $colorGreen
 
 /* Адаптация */
