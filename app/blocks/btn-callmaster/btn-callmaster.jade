@@ -11,4 +11,9 @@ mixin btn-callmaster()
 						button.close(type="button" data-dismiss="modal" aria-label="Close")
 							span(aria-hidden="true") &times;
 					.modal-body
+						form#contact-us__form.contact-us__form
+							input(type='text' name='callMasterName' placeholder='Ваше имя').contact-us__form-input
+							input(type='text' name='callMasterPhone' placeholder='Номер телефона').contact-us__form-input
+							textarea(name='message' placeholder='Опишите проблему').contact-us__form-textarea
+							button(type='submit' form='contact-us__form' value='Отправить').contact-us__form-button Отправить
 		// /Модалка

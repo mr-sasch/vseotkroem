@@ -12,4 +12,8 @@ mixin any-questions()
 						button.close(type="button" data-dismiss="modal" aria-label="Close")
 							span(aria-hidden="true") &times;
 					.modal-body
+						form#contact-us__form.contact-us__form
+							input(type='text' name='callbackName' placeholder='Ваше имя').contact-us__form-input
+							input(type='text' name='callbackPhone' placeholder='Номер телефона').contact-us__form-input
+							button(type='submit' form='contact-us__form' value='Отправить').contact-us__form-button Отправить
 		// /Модалка
